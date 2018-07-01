@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         //Display the order summary
         String priceMessage = createOrderSummary(name, price, hasWhippedCream, hasChocolate);
 
-        // Use an intent to launch an email app.
+        // Use an intent to launch an email app and maile the customer the order details.
         // Send the order summary in the email body.
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
